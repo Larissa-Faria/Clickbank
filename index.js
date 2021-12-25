@@ -15,10 +15,10 @@ contaCorrenteRicardo.cliente = cliente1;
 contaCorrenteRicardo.deposito(500);
 
 const conta2 = new ContaCorrente();
-conta2.cliente = cliente2;
+conta2.cliente = cliente1;
 conta2.agencia = 103;
 
-contaCorrenteRicardo.transferencia(200, conta2);
+let valor = 200;
+contaCorrenteRicardo.transferencia(valor, conta2);
 
-console.log(conta2);
-console.log(contaCorrenteRicardo);
+console.log(ContaCorrente.totalDeContas);

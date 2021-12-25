@@ -5,6 +5,7 @@ export class ContaCorrente {
   cliente;
   _saldo = 0;
   /*a função saque é propriedade do objeto contacorrente entao ela é um metodo*/
+
   saque(valor) {
     /*this é o sujeito (ContaCorrente)*/
     if (this._saldo >= valor) {
@@ -22,4 +23,12 @@ export class ContaCorrente {
     const valorSacado = this.saque(valor);
     conta.deposito(valorSacado);
   }
+
+  function totalDeContas(0) {
+      ContaCorrente.totalDeContas += 1;
+  }
+}
+for (let i = 0; i < array.length; i++) {
+    const ContaCorrente = array[i];
+    
 }
